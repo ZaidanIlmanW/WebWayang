@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --coklat-color: #170C08;
+    --emas1-color: #FFDA79;
+    --emas2-color: #cc8e35;
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: var(--coklat-color);
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #bd9359;
+    border-radius: 10px;
+    transition: all .50s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #cc8e35;
+}
+
+
+.container{
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../public/bg/BG2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wadah{
+    background-color: rgba(225, 225, 225, 0.2);
+    text-align: center;
+    padding:  20px;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(225, 225, 225, 0.2);
+    margin: auto 40px;
+    transition: all .55s ease;
+    opacity: 30%;
+}
+
+.wadah:hover{
+    transform: scale(1.06);
+    background-color: rgba(225, 225, 225, 0.2);
+    text-align: center;
+    padding:  20px;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 0.5px solid var(--emas2-color);
+    margin: auto 40px;
+    opacity: 100%;
+}
+
+.wadah img {
+    width: 350px;
+    border-radius: 20px;
+    /* background: red; */
+    /* z-index: 1000; */
+    margin-top: 15px;
+}
+
+.wadah p {
+    width: 100%;
+    background-color: #170C08;
+    border-radius: 12px;
+    padding: 5px;
+    font-size: 14px;
+}
+
